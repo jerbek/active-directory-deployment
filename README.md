@@ -15,6 +15,7 @@ This guide outlines the implementation of Active Directory within Azure Virtual 
 - Active Directory Domain Services
 - DNS
 - PowerShell
+- Tailscale
 
 <h2>Operating Systems Used </h2>
 
@@ -23,10 +24,12 @@ This guide outlines the implementation of Active Directory within Azure Virtual 
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Step 1: Initial VM deployment and Azure configurations
+- Step 2: Installing and configuring tailscale
+- Step 3: Configuring server roles and features
+- Step 4: Configuring Active Directory and DNS
+- Step 5: Creating users and organizational units
+- Step 6: Configuring group policies
 
 <h2>Deployment and Configuration Steps</h2>
 
