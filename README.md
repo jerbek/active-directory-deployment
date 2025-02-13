@@ -26,32 +26,48 @@ This guide outlines the implementation of Active Directory within Azure Virtual 
 
 - Step 1: Initial VM deployment and Azure configurations
 - Step 2: Installing and configuring tailscale
-- Step 3: Configuring server roles and features
-- Step 4: Configuring Active Directory and DNS
-- Step 5: Creating users and organizational units
-- Step 6: Configuring group policies
+- Step 3: Adding server roles and features
+- Step 4: Configuring Active Directory
+- Step 5: Configuring DNS
+- Step 6: Creating users and organizational units
+- Step 7: Configuring group policies
 
 <h2>Deployment and Configuration Steps</h2>
 <p>
-  Deploy your windows server VM and set the virtual NIC to a static IP. This is because as a domain controller and DNS server, you don't want a dynamically changing IP.
+  1. Deploy your windows server VM and set the virtual NIC to a static IP - this is required for domain controller and DNS server.
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/6c9c63bb-c197-4004-99ff-31811c43495f" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
 <br />
+<p>
+  2. Install tailscale and check "Run unattended" in the preferences submenu from the taskbar so it will automatically start upon reboots and run as the admin user you have made
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/51a6a800-2c6d-4b08-845b-09678bc2712e" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
 <br />
+<p>
+  3. When adding server roles and features, check Active Directory Domain Services, DNS, and IIS. After those are done installing, go back through server roles and features again and check CGI under IIS->Application Development.
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/62487467-6101-49b5-bdf0-81e8842a438d" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<br />
+<p>
+  4. Promote your server to domain controller, configuring your new forest, domain, and DSRM password
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/5521bb17-624b-44ce-ac2d-314228d9db2e" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<br />
+<p>
+  5. Add a new A record for your domain and then in Tailscale admin DNS settings add a split DNS nameserver at the internal tailscale IP for your VM. This is so you can utilize Tailscale's magic DNS for internal FQDN.
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/a0d838cb-4f2c-4e74-b610-73e27b3590cc" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
