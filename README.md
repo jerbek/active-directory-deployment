@@ -1,5 +1,5 @@
 # active-directory-deployment
-A guide on deploying Active Directory as part of an internal IT authentication, support, and knowledge suite in the cloud (Azure)
+A guide on deploying Active Directory as part of an internal authentication, support, and knowledge suite in the cloud (Azure)
 
 <p align="center">
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
