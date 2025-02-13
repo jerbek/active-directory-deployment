@@ -32,12 +32,11 @@ This guide outlines the implementation of Active Directory within Azure Virtual 
 - Step 6: Configuring group policies
 
 <h2>Deployment and Configuration Steps</h2>
-
-<p>
-  <img src="[https://i.imgur.com/DJmEXEB.png](https://github.com/user-attachments/assets/6c9c63bb-c197-4004-99ff-31811c43495f)" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 <p>
   Deploy your windows server VM and set the virtual NIC to a static IP. This is because as a domain controller and DNS server, you don't want a dynamically changing IP.
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/6c9c63bb-c197-4004-99ff-31811c43495f" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
