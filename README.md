@@ -41,7 +41,7 @@ This guide outlines the implementation of Active Directory within Azure Virtual 
 
 <br />
 <p>
-  2. RDP into your VM and install tailscale and check "Run unattended" in the preferences submenu from the taskbar so it will automatically start upon reboots and run as the admin user you have made
+  2. RDP into your VM and install tailscale and check "Run unattended" in the preferences submenu from the taskbar so it will automatically start upon reboots and run as the admin user you have made.
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/51a6a800-2c6d-4b08-845b-09678bc2712e" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -76,7 +76,7 @@ This guide outlines the implementation of Active Directory within Azure Virtual 
   6. Create your organizational units
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/a0d838cb-4f2c-4e74-b610-73e27b3590cc" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/3e050999-f1d7-46aa-b33b-36ea28313e77" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <br />
@@ -84,7 +84,7 @@ This guide outlines the implementation of Active Directory within Azure Virtual 
   6a. Mass create user accounts with a powershell script
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/a0d838cb-4f2c-4e74-b610-73e27b3590cc" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/8ea428d5-60fc-4811-b516-5c81189f1593" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <br />
@@ -92,5 +92,5 @@ This guide outlines the implementation of Active Directory within Azure Virtual 
   7. Edit your group policies
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/a0d838cb-4f2c-4e74-b610-73e27b3590cc" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/26025e6d-43b6-4cc2-8e50-eee6bc0f00c5" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
