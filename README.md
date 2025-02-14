@@ -24,7 +24,7 @@ This guide outlines the implementation of Active Directory within Azure Virtual 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Step 1: Initial VM deployment and Azure configurations
-- Step 2: Installing and configuring tailscale
+- Step 2: Installing and configuring Tailscale
 - Step 3: Adding server roles and features
 - Step 4: Configuring Active Directory
 - Step 5: Configuring DNS
@@ -57,7 +57,7 @@ This guide outlines the implementation of Active Directory within Azure Virtual 
 
 <br />
 <p>
-  4. Promote your server to domain controller, configuring your new forest, domain, and DSRM password
+  4. Promote your server to domain controller, configuring your new forest, domain, and DSRM password.
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/5521bb17-624b-44ce-ac2d-314228d9db2e" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -65,7 +65,7 @@ This guide outlines the implementation of Active Directory within Azure Virtual 
 
 <br />
 <p>
-  5. In Tailscale admin DNS settings add a split DNS nameserver at the internal tailscale IP for your domain. This is so you can utilize Tailscale's magic DNS for internal FQDN.
+  5. In Tailscale admin DNS settings add a split DNS nameserver at the internal tailscale IP for your domain. This is so you can utilize Tailscale's magic DNS for the internal FQDN.
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/a0d838cb-4f2c-4e74-b610-73e27b3590cc" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -73,7 +73,23 @@ This guide outlines the implementation of Active Directory within Azure Virtual 
 
 <br />
 <p>
-  6. 
+  6. Create your organizational units
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/a0d838cb-4f2c-4e74-b610-73e27b3590cc" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<br />
+<p>
+  6a. Mass create user accounts with a powershell script
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/a0d838cb-4f2c-4e74-b610-73e27b3590cc" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<br />
+<p>
+  7. Edit your group policies
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/a0d838cb-4f2c-4e74-b610-73e27b3590cc" height="80%" width="80%" alt="Disk Sanitization Steps"/>
