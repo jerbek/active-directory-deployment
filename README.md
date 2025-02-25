@@ -81,7 +81,7 @@ This guide outlines the implementation of Active Directory within Azure Virtual 
 
 <br />
 <p>
-  6a. Mass create user accounts with a powershell script
+  6a. Mass create user accounts with <a href="https://raw.githubusercontent.com/joshmadakor1/AD_PS/refs/heads/master/Generate-Names-Create-Users.ps1">this powershell script</a>
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/8ea428d5-60fc-4811-b516-5c81189f1593" height="80%" width="80%" alt="Disk Sanitization Steps"/>
