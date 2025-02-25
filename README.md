@@ -31,6 +31,9 @@ This guide outlines the implementation of Active Directory within Azure Virtual 
 - Step 6: Creating users and organizational units
 - Step 7: Configuring group policies
 
+<h2>Demonstration</h2>
+https://youtu.be/1B25Bnbcy2M
+
 <h2>Deployment and Configuration Steps</h2>
 <p>
   1. Deploy your windows server VM and set the virtual NIC to a static IP in Settings>IP Configurations - this is required for domain controller and DNS server.
