@@ -32,9 +32,7 @@ This guide outlines the implementation of Active Directory within Azure Virtual 
 - Step 7: Configuring group policies
 
 <h2>Video Demonstration</h2>
-<a href="https://youtu.be/1B25Bnbcy2M">
-    <img src="https://img.youtube.com/vi/1B25Bnbcy2M/0.jpg" alt="">
-</a>
+https://youtu.be/1B25Bnbcy2M
 
 <h2>Deployment and Configuration Steps</h2>
 <p>
